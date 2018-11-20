@@ -1,7 +1,12 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/show/show",
+    "pages/upload/upload",
+    "pages/rentout/rentout",
+    "pages/edit/edit", 
+    "pages/completed/completed",
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
