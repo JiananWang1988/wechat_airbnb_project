@@ -1,1 +1,31 @@
 /* pages/show/show.wxss */
+.buy-button {
+  width:40px;
+  height:40px;
+  position: absolute;
+  right:20px;
+  top:260px;
+}
+
+.show-image{ 
+  width:375px;
+  height:280px;
+  background-size:cover;
+}
+
+.show-name{
+  font-size:21px;
+  font-weight: bold;
+}
+
+.show-price{
+  font-size:15px;
+}
+
+.show-description{
+  font-size:15px;
+}
+
+.show-text {
+  margin: 30px 20px;
+}

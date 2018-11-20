@@ -1,1 +1,26 @@
 /* pages/completed/completed.wxss */
+.confirm-green {
+  width: 88px;
+  height: 88px;
+}
+
+.btn-confirm {
+  background-color: #FFCC16;
+  width: 135px;
+  height: 54px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.success {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.success-text {
+color: #979797;
+}

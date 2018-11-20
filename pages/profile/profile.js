@@ -5,7 +5,23 @@ Page({
    * Page initial data
    */
   data: {
-
+    cards: [
+      {
+        name: "iPAD CHARGER",
+        image: "https://kitt.lewagon.com/placeholder/cities/shanghai",
+        price: "45"
+      },
+      {
+        name: "Your saver",
+        image: "https://kitt.lewagon.com/placeholder/cities/tokyo",
+        price: "1000"
+      },
+      {
+        name: "A lot of charger",
+        image: "https://kitt.lewagon.com/placeholder/cities/kyoto",
+        price: "5"
+      }
+    ]
   },
 
   /**
