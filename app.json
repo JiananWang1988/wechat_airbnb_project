@@ -10,8 +10,34 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#FFCC16",
+    "navigationBarTitleText": "STUFFIE",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor": "white",
+    "selectedColor": "white",
+    "borderColor": "white",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/edit/edit",
+        "iconPath": "images/grey/myrenting.png",
+        "selectedIconPath": "images/yellow/myrenting.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/grey/rent.png",
+        "selectedIconPath": "images/yellow/rent.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/grey/rentout.png",
+        "selectedIconPath": "images/yellow/rentout.png",
+        "text": ""
+      }
+    ]
   }
 }

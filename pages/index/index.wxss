@@ -1,21 +1,69 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/* Cards */
+.section {
+  margin-top: 20px;
+  background:rgb(237, 234, 234);
+  border-radius: 20px;
+  font-size: 15px;
+  width: 350px;
+  text-align: center;
+  margin-left: 33px;
+  margin-bottom: 1px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.card {
+  height: 120px;
+  width: 350px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 32px;
+}
+
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description .name {
+  font-size: 24px;
+}
+.card-description .tag {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.top-avatars {
+ position: absolute;
+ right: 10px;
+ top: 8px;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+.bottom-avatar {
+ position: absolute;
+ right: 10px;
+ top: 90px;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+.bottom-avatars {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
 }
