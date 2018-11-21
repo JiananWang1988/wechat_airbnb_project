@@ -54,7 +54,30 @@
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index"
-				}
+				},
+                {
+          "id": -1,
+          "name": "showdetail",
+          "pathName": "pages/show/show",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "complete",
+          "pathName": "pages/completed/completed",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "complete",
+          "pathName": "pages/profile/profile",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "rentout",
+          "pathName": "pages/rentout/rentout"
+        }
 			]
 		}
 	}

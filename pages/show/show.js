@@ -5,14 +5,14 @@ Page({
    * Page initial data
    */
   data: {
-
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let itemId = options.id
+    this.getData(itemId);
   },
 
   /**
@@ -62,5 +62,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  getData: function (item_id) {
+    //wx.requrdy
+    this.setData(
+      {
+        card: 
+          {
+            item_id: 1,
+            name: "shanghai",
+            price: "shanghai",
+            description:"lalal"
+          }
+        }
+
+      )
   }
 })

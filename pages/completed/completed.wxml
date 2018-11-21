@@ -1,2 +1,8 @@
 <!--pages/completed/completed.wxml-->
-<text>pages/completed/completed.wxml</text>
+<view class="container">
+<image class="confirm-green" src="/images/confirm-green.png"></image>
+<view class="success"><text>SUCCESS</text></view>
+<view class="success-text"><text>Go pick up your charger !</text></view>
+</view>
+<button class="btn-confirm" bindtap='indexChargers'>CONFIRM</button >
+

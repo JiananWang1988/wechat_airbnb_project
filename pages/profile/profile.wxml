@@ -1,2 +1,9 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="profile-tittle">My Renting</view>
+  <view class="flexbox" wx:for="{{cards}}" wx:for-index="index" wx:for-item="card">
+    <image class="profile-img" src="{{card.image}}"></image>
+    <view class="profile-text">
+      <view class="show-name">{{card.name}}</view>
+      <view class="show-price">${{card.price}}</view>
+    </view>
+  </view>

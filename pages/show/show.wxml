@@ -1,2 +1,16 @@
 <!--pages/show/show.wxml-->
-<text>pages/show/show.wxml</text>
+<view class="show-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+ <image class="buy-button" src="/images/buy_button.png"></image>
+</view>
+
+<view class="show-text">
+<view>
+<text class="show-name">{{card.name}}</text>
+</view>
+<view>
+<text class="show-price">${{card.price}}</text>
+</view>
+<view>
+<text class="show-description">{{card.description}}</text>
+</view>
+</view>

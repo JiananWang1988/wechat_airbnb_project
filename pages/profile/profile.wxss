@@ -1,1 +1,32 @@
 /* pages/profile/profile.wxss */
+.profile-tittle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-img {
+  width: 110px;
+  height: 90px;
+  margin: 5px;
+}
+
+.flexbox{
+  display: flex;
+  border: solid #C4C4C4 1px;
+  margin: 10px 15px;
+}
+
+.profile-text {
+  display: flex;
+  margin: auto 0;
+}
+
+.show-name {
+  font-weight: bold;
+}
+
+.show-price {
+  position: absolute;
+  right: 20px;
+}

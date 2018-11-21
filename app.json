@@ -4,7 +4,7 @@
     "pages/show/show",
     "pages/upload/upload",
     "pages/rentout/rentout",
-    "pages/edit/edit", 
+    "pages/edit/edit",
     "pages/completed/completed",
     "pages/profile/profile"
   ],
