@@ -1,0 +1,10 @@
+<!--pages/add/add.wxml-->
+<view class="header">
+  <view class="h2-header">Add a Product!</view>
+  <view class="h3-comment">Use your Imagination!</view>
+</view>
+
+<view class = "forms">
+<import src="/shared/addform.wxml"/>
+<template is="form"/>
+</view>

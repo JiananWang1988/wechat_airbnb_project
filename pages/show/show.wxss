@@ -8,18 +8,20 @@
 }
 
 .show-image{ 
-  width:375px;
+  width:100wv;
   height:280px;
   background-size:cover;
 }
 
 .show-name{
-  font-size:21px;
+  font-size:25px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .show-price{
-  font-size:15px;
+  font-size:20px;
+  margin-bottom: 30px;
 }
 
 .show-description{
@@ -29,3 +31,13 @@
 .show-text {
   margin: 30px 20px;
 }
+
+.name-card {
+  margin-bottom: 15px;
+}
+
+.description-card {
+  margin-top: 15px;
+  width: 90wv;
+}
+

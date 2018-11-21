@@ -6,7 +6,8 @@
     "pages/rentout/rentout",
     "pages/edit/edit",
     "pages/completed/completed",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/add/add"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -33,7 +34,7 @@
         "text": ""
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/rentout/rentout",
         "iconPath": "images/grey/rentout.png",
         "selectedIconPath": "images/yellow/rentout.png",
         "text": ""

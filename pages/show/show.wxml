@@ -1,16 +1,16 @@
 <!--pages/show/show.wxml-->
-<view class="show-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+<view class="show-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1534434050285-43398fb24198?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8def0b22c4e6357fbdfedcfec618ff8b&auto=format&fit=crop&w=1950&q=80');">
  <image class="buy-button" src="/images/buy_button.png"></image>
 </view>
 
 <view class="show-text">
-<view>
+<view class= "name-card">
 <text class="show-name">{{card.name}}</text>
 </view>
 <view>
 <text class="show-price">${{card.price}}</text>
 </view>
-<view>
+<view class = "description-card">
 <text class="show-description">{{card.description}}</text>
 </view>
 </view>
