@@ -1,1 +1,70 @@
 /* pages/edit/edit.wxss */
+/* pages/new/new.wxss */
+.container {
+  background: #edeaea;
+  margin-top: 40px;
+}
+
+.h2-header {
+  color: black;
+  text-align: center;
+  font-size: 50rpx; 
+  font-weight: bold;
+  padding: 10px;
+}
+
+.h3-comment {
+  text-align: center;
+  color: #cfcccc;
+}
+
+/* Avatar */
+.userinfo-avatar {
+  width:180rpx;
+  height:180rpx;
+  margin:20rpx;
+  border-radius:50%;
+}
+
+/* form style */
+.user-input {
+  width: 100%;
+  margin-bottom: 35rpx;
+}
+.input-height {
+  height: 10em;
+  font-size: 15px;
+}
+.input-label {
+  font-size: 35rpx;
+}
+textarea {
+  padding: 10rpx 0;
+  font-size: 35rpx;
+  width: 100%;
+}
+.text-area-wrap {
+  padding: 15rpx 15rpx;
+  background-color: #fff;
+  margin-top:8px;
+  border-radius: 4px;
+  border-left: 5px solid #9F9F9C;
+  height: 20px;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.container {
+  padding:40px;
+}
+
+.input-name {
+  font-size: 18px;
+}
+
+.button {
+  font-size: 10px;
+  color: #FFCC16;
+}

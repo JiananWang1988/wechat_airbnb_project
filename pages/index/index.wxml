@@ -1,13 +1,35 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!--index.wxml-->
+
+<view class="section">
+  <input placeholder='Search for the best charger...' search="text" />
+</view>
+
+<view wx:for="{{restaurants}}" wx:for-item="restaurant" wx:key="restaurant.id" bindtap="showRestaurant" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{restaurant.image}}');" data-restaurant="{{restaurant}}">
+
+  <view class="card-category">
+    {{restaurant.price}}
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="top-avatar">
+    <image class="top-avatars" src="/images/mask.png"></image>
+    
+  </view>
+
+  <view class="card-description">
+    <view class="name">
+      {{restaurant.name}}
+    </view>
+
+    <view class="tag">
+      {{restaurant.description}}
+    </view>
+
+  </view>
+
+    <view class="bottom-avatar">
+    <image class="bottom-avatars" src="/images/buy_button.png"></image>
   </view>
 </view>
+
+
