@@ -21,15 +21,15 @@
     "color": "black",
     "list": [
       {
-        "pagePath": "pages/edit/edit",
-        "iconPath": "images/grey/myrenting.png",
-        "selectedIconPath": "images/yellow/myrenting.png",
-        "text": ""
-      },
-      {
         "pagePath": "pages/index/index",
         "iconPath": "images/grey/rent.png",
         "selectedIconPath": "images/yellow/rent.png",
+        "text": "Testing"
+      },
+      {
+        "pagePath": "pages/edit/edit",
+        "iconPath": "images/grey/myrenting.png",
+        "selectedIconPath": "images/yellow/myrenting.png",
         "text": ""
       },
       {

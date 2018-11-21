@@ -64,7 +64,8 @@ textarea {
   font-size: 18px;
 }
 
-.button {
-  font-size: 10px;
-  color: #FFCC16;
+#submit-button {
+  font-size: 20px;
+  background-color: #FFCC16;
+  border-radius: 15px;
 }

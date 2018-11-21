@@ -37,8 +37,8 @@
   </view>
 
 
-<view class="button">
-  <button  style="margin-top:30px" type="warn" form-type="submit" loading="{{loading}}">Submit</button>
+<view>
+  <button id="submit-button" style="margin-top:30px" type="warn" form-type="submit" loading="{{loading}}">Submit</button>
 </view>
   </form>
 
