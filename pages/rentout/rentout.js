@@ -1,6 +1,10 @@
 // pages/rentout/rentout.js
 Page({
-
+  testFunction: function () {
+    wx.navigateTo({
+      url: '../edit/edit'
+    })
+  },
   /**
    * Page initial data
    */

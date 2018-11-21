@@ -36,24 +36,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
-					"id": -1,
-					"name": "edit",
+					"id": 0,
+					"name": "add",
 					"pathName": "pages/edit/edit",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "share",
-					"pathName": "pages/share/share",
-					"query": ""
-				},
-				{
-					"id": -1,
 					"name": "index",
-					"pathName": "pages/index/index"
+					"pathName": "pages/index/index",
+					"query": ""
 				},
 				{
 					"id": -1,
@@ -68,15 +63,16 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "complete",
+					"id": 4,
+					"name": "my renting",
 					"pathName": "pages/profile/profile",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "rentout",
-					"pathName": "pages/rentout/rentout"
+					"pathName": "pages/rentout/rentout",
+					"query": ""
 				}
 			]
 		}

@@ -24,16 +24,16 @@
         "pagePath": "pages/index/index",
         "iconPath": "images/grey/rent.png",
         "selectedIconPath": "images/yellow/rent.png",
-        "text": "Testing"
+        "text": ""
       },
       {
-        "pagePath": "pages/edit/edit",
+        "pagePath": "pages/profile/profile",
         "iconPath": "images/grey/myrenting.png",
         "selectedIconPath": "images/yellow/myrenting.png",
         "text": ""
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/rentout/rentout",
         "iconPath": "images/grey/rentout.png",
         "selectedIconPath": "images/yellow/rentout.png",
         "text": ""
