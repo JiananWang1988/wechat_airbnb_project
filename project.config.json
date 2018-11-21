@@ -36,6 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
+			"current": 7,
 			"current": 4,
 			"list": [
 				{
@@ -52,12 +53,15 @@
 				},
 				{
 					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
 					"name": "showdetail",
 					"pathName": "pages/show/show",
-					"query": ""
 				},
 				{
 					"id": -1,
+					"name": "showdetail",
+					"pathName": "pages/show/show",
 					"name": "complete",
 					"pathName": "pages/completed/completed",
 					"query": ""
@@ -66,10 +70,29 @@
 					"id": 4,
 					"name": "my renting",
 					"pathName": "pages/profile/profile",
+				},
+				{
+					"id": -1,
+					"name": "complete",
+					"pathName": "pages/completed/completed",
 					"query": ""
 				},
 				{
 					"id": -1,
+					"name": "complete",
+					"pathName": "pages/profile/profile",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "rentout",
+					"pathName": "pages/rentout/rentout",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "add",
+					"pathName": "pages/add/add"
 					"name": "rentout",
 					"pathName": "pages/rentout/rentout",
 					"query": ""

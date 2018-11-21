@@ -1,22 +1,18 @@
-// pages/show/show.js
+// pages/add/add.js
 Page({
-  clickComplete: function () {
-    wx.navigateTo({
-      url: '../completed/completed'
-    })
-  },
+
   /**
    * Page initial data
    */
   data: {
+
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    let itemId = options.id
-    this.getData(itemId);
+
   },
 
   /**
@@ -66,20 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  getData: function (item_id) {
-    //wx.requrdy
-    this.setData(
-      {
-        card: 
-          {
-            item_id: 1,
-            name: "Phone Charger",
-            price: "250RMB",
-            description:"Probably one of the coolest chargers you will ever find this charger comes with everything. It is the total package."
-          }
-        }
-
-      )
   }
 })

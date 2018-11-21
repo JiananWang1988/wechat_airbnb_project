@@ -1,10 +1,10 @@
 <!--pages/edit/edit.wxml-->
 <view class="header">
-  <view class="h2-header">Add a product</view>
-  <view class="h3-comment">Use your imagination!</view>
+  <view class="h2-header">Edit my product</view>
+  <view class="h3-comment">Make it way better</view>
 </view>
 
 <view class = "forms">
-<import src="/shared/form.wxml"/>
+<import src="/shared/editform.wxml"/>
 <template is="form"/>
 </view>

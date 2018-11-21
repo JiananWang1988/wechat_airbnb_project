@@ -32,13 +32,14 @@
 
   <view class="user-input">
     <view class="text-area-wrap">
-    <textarea value="{{image}}" style="input-size"placeholder="Image" class="input-height" name="image" maxlength="-1" auto-height />
+    <textarea value="{{image}}" style="input-size"placeholder="Image" class="input-height" name="image" maxlength="-1" auto-height/>
     </view>
+  
   </view>
 
 
 <view>
-  <button id="submit-button" style="margin-top:30px" type="warn" form-type="submit" loading="{{loading}}">Submit</button>
+  <button id="submit-button" style="margin-top:30px" type="warn" form-type="Edit" loading="{{loading}}">Submit</button>
 </view>
   </form>
 

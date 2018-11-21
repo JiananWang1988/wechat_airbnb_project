@@ -5,13 +5,11 @@
 }
 
 .btn-confirm {
+  font-size: 20px;
   background-color: #FFCC16;
-  width: 135px;
-  height: 54px;
-  border-radius: 30px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 30px;
+  font-weight: bolder;
+  color: white;
+  width: 350px;
 }
 
 .success {
