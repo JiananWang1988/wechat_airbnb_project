@@ -32,8 +32,9 @@
 
   <view class="user-input">
     <view class="text-area-wrap">
-    <textarea value="{{image}}" style="input-size"placeholder="Image" class="input-height" name="image" maxlength="-1" auto-height />
+    <textarea value="{{image}}" style="input-size"placeholder="Image" class="input-height" name="image" maxlength="-1" auto-height/>
     </view>
+  
   </view>
 
 
