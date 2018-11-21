@@ -5,6 +5,12 @@ var app = getApp()
 // This is the access to the app.js file
 
 Page({
+  linkComplete: function () {
+    wx.navigateTo({
+      url: '../completed/completed'
+    })
+  },
+
   data: {
 
   },

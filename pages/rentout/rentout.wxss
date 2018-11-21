@@ -15,7 +15,7 @@
   display: flex;
   border: solid #C4C4C4 1px;
   margin: 10px 15px;
-  width: 80%;
+  width: 85%;
 }
 
 .profile-text {

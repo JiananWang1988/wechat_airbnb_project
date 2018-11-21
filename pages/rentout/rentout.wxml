@@ -11,4 +11,4 @@
     </view>
     <image class="btn-minus" src="/images/minus.png"></image>
   </view>
-  <image class="btn-plus" src="/images/plus.png"></image>
+  <image class="btn-plus" bindtap="testFunction" src="/images/plus.png"></image>
