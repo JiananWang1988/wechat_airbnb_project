@@ -1,6 +1,10 @@
 // pages/show/show.js
 Page({
-
+  clickComplete: function () {
+    wx.navigateTo({
+      url: '../completed/completed'
+    })
+  },
   /**
    * Page initial data
    */

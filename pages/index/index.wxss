@@ -6,7 +6,7 @@
   background:rgb(237, 234, 234);
   border-radius: 20px;
   font-size: 15px;
-  width: 350px;
+  width: 80vw;
   text-align: center;
   margin-left: 33px;
   margin-bottom: 1px;
@@ -14,13 +14,13 @@
 
 .card {
   height: 120px;
-  width: 350px;
+  width: 80vw;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
-  margin: 32px;
+  margin: 10vw;
 }
 
 .card-category {

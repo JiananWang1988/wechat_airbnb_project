@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -37,17 +37,12 @@
 		},
 		"miniprogram": {
 			"current": 7,
+			"current": 4,
 			"list": [
 				{
-					"id": -1,
-					"name": "edit",
+					"id": 0,
+					"name": "add",
 					"pathName": "pages/edit/edit",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "share",
-					"pathName": "pages/share/share",
 					"query": ""
 				},
 				{
@@ -58,9 +53,23 @@
 				},
 				{
 					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
 					"name": "showdetail",
 					"pathName": "pages/show/show",
+				},
+				{
+					"id": -1,
+					"name": "showdetail",
+					"pathName": "pages/show/show",
+					"name": "complete",
+					"pathName": "pages/completed/completed",
 					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "my renting",
+					"pathName": "pages/profile/profile",
 				},
 				{
 					"id": -1,
@@ -84,6 +93,9 @@
 					"id": -1,
 					"name": "add",
 					"pathName": "pages/add/add"
+					"name": "rentout",
+					"pathName": "pages/rentout/rentout",
+					"query": ""
 				}
 			]
 		}
