@@ -1,11 +1,6 @@
-// pages/add/add.js
-var app = getApp()
+// pages/login/login.js
+const app = getApp()
 Page({
-  jumpCompleted: function () {
-    wx.navigateTo({
-      url: '../completed/completed'
-    })
-  },
   /**
    * Page initial data
    */
@@ -17,7 +12,6 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
   },
 
   /**
@@ -68,31 +62,28 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  bindSubmit: function (e) {
-    //console.log(e)
-    let chargerData = {
-      item: e.detail.value
-    }
-    console.log(chargerData);
-    
-      var page = this;
-      wx.request({
-        url: `${app.globalData.serverUrl}/api/v1/items?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
-        method: 'POST',
-        data: chargerData,
-        header: {
-          'content-type': 'application/json' // 默认值
-        },
-        success(res) {
-          console.log(res.data)
-          // wx.navigateBack({
-          // })
-          page.jumpCompleted()
-          // page.setData({
-          //   items: res.data.items
-          // })
-        }
-      })
+  login: function () {
+    wx.login({
+      success: (res) => {
+        console.log(res)
+        // insert next code here
+        wx.request({
+          url: `${app.globalData.serverUrl}/api/v1/login`,
+          method: 'post',
+          data: {
+            code: res.code
+          },
+          // insert next code here
+          success: (res) => {
+            let access_token = res.data.access_token
+            console.log(access_token)
+            app.globalData.access_token = access_token
+            wx.switchTab({
+              url: '../index/index',
+            })
+          }
+        })
+      }
+    })
   }
 })

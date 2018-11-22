@@ -1,48 +1,65 @@
 /* pages/rentout/rentout.wxss */
-.profile-tittle {
-  font-size: 20px;
-  font-weight: bold;
+.h2-header {
+  color: black;
   text-align: center;
+  font-size: 50rpx; 
+  font-weight: bold;
+  padding: 10px;
+  margin: 15px;
+}
+
+.h3-comment {
+  text-align: center;
+  color: #ceccc8;
+  font-size: 40rpx;
+  margin-bottom: 33px;
 }
 
 .profile-img {
-  width: 110px;
+  width: 130px;
   height: 90px;
-  margin: 5px;
+  margin: 10px;
 }
 
 .flexbox{
   display: flex;
-  border: solid #C4C4C4 1px;
-  margin: 10px 15px;
-  width: 85%;
+  border-radius: 4px;
+  margin: 25px 20px;
+  width: 79%;
+  background-color: #eaeaea;
 }
 
 .profile-text {
   display: flex;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .show-name {
   font-weight: bold;
+  font-size: 15px;
 }
 
 .show-price {
   position: absolute;
-  right: 48px;
+  right: 80px;
+  font-size: 13px;
+}
+
+.rentout-description {
+  font-size: 15px;
 }
 
 .btn-minus {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  right: 10px;
-  padding-top: 30px;
+  right: 26px;
+  padding-top: 36px;
 }
 
 .btn-plus {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: 10px;
+  right: 21px;
 }
