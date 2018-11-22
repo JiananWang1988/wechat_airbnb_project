@@ -1,5 +1,10 @@
-
 App({
+
+  //photo upload
+
+// Initialization of the app
+
+
 
   onLaunch: function () {
     //Write API call that fetches data from backend
@@ -24,6 +29,12 @@ App({
     //     })
     //   }
     // })
+    const AV = require('./utils/av-weapp-min.js');
+    const config = require('./key.js');
+    AV.init({
+      appId: config.appId,
+      appKey: config.appSecret,
+    });
   },
 
   globalData: {
