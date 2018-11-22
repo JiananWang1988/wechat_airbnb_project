@@ -5,6 +5,62 @@
 </view>
 
 <view class = "forms">
-<import src="/shared/addform.wxml"/>
-<template is="form"/>
+<!-- <import src="/shared/addform.wxml"/> -->
+<!-- <template name="form"> -->
+
+  <view class="container">
+  <view class="wrap">
+  
+  <form bindsubmit="bindSubmit">
+  
+
+  <view class ="input-name">Name</view>
+  <view class="user-input">
+    <view class="text-area-wrap">
+    <textarea value="{{name}}" style="input-size" placeholder="name" class="input-height" name="name" maxlength="-1" auto-height />
+    </view>
+  </view>
+
+    <view class ="input-name">Price</view>
+  <view class="user-input">
+      <view class="text-area-wrap">
+      <textarea value="{{price}}" style="input-size"placeholder="i.e. 250" class="input-height" name="price" maxlength="-1" auto-height />
+      </view>
+    </view>
+ 
+  <view class ="input-name">Description</view>
+  <view class="user-input">
+    <view class="description-table">
+    <view class="text-area-wrap-description">
+    <textarea value="{{description}}" style="input-size"placeholder="i.e. Let people know more about it" class="input-height" name="description" maxlength="-1" auto-height />
+    </view>
+  </view>
+  </view>
+
+  <view class ="input-name">Image</view>
+  <view class="user-input">
+    <view class="text-area-wrap-image">
+    <image class ="add-image" src="/images/addpicture.png" bindtap='takePhoto'></image>
+      <block wx:if="{{image == ''}}">
+        <image class ="add-image" src="/images/addpicture.png" bindtap='takePhoto'></image>
+        </block>
+        <block wx:if="{{image != ''}}">
+        <image class ="add-image" src="{{filePath}}" bindtap='takePhoto'></image>
+        </block>
+    <textarea value="{{image}}" style="input-size" class="input-height" name="image" maxlength="-1" auto-height />
+    </view>
+  </view>
+
+
+<view>
+  <button id="submit-button" style="margin-top:30px" type="warn" form-type="submit" loading="{{loading}}">Submit</button>
+</view>
+  </form>
+
+
+</view>
+</view>
+
+<!-- </template>
+<template is="form"/> -->
 </view>
