@@ -10,6 +10,7 @@
       </view>
       <view class="rentout-description">{{item.description}}</view>
     </view>
-    <image class="btn-minus" data-itemid="{{item.id}}" bindtap="deleteItem" src="/images/minus3.png"></image>
+        <image class="btn-minus" data-itemid="{{item.id}}" bindtap="deleteItem" src="/images/minus3.png"></image>
+    <image class="pencil" data-itemid="{{item.id}}" id="{{index}}" bindtap="editItem" src="/images/pencil.png"></image>
   </view>
   <image class="btn-plus" bindtap="testFunction" src="/images/plus2.png"></image>

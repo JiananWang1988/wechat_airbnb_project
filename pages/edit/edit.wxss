@@ -65,7 +65,8 @@ textarea {
 
 #submit-button {
   font-size: 20px;
+  width: 330px;
   background-color: #FFCC16;
   font-weight: bolder;
-  border-radius: 15px;
+  border-radius: 5px;
 }

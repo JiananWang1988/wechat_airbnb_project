@@ -1,14 +1,24 @@
 /* pages/login/login.wxss */
+.background {
+  height: 100vh;
+  opacity: 0.8;
+
+}
+
 .welcome {
-  margin-top: 120px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 .slogan {
   font-size: 30px;
+  font-style:italic;
   text-align: center;
-  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
 }
 
 .stuffie {
@@ -16,9 +26,11 @@
 }
 
 #login {
-  margin-top: 30px;
+
+  margin-top: 50px;
   font-size: 20px;
   background-color: #FFCC16;
   font-weight: bolder;
   width: 200px;
+  color: black;
 }
