@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+
+<view class="welcome">Welcome to STUFFIE!</view>
+
+<view class="stuffie">
+  <image class="stuffie" src="/images/stuffie.jpeg"></image>  
+</view>
+
+<view class="slogan">Charge your life...rent a charger</view>
+
+<view>
+  <button id="login" bindtap='login' style="margin-top:30px" type="warn" loading="{{loading}}">LOGIN</button>
+</view>

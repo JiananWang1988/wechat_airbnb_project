@@ -13,7 +13,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "wx661a20eedb95c390",
+	"appid": "wx9f8aa74289323fc8",
 	"projectname": "WeChat",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -60,7 +60,31 @@
 				{
 					"id": -1,
 					"name": "completed",
-					"pathName": "pages/completed/completed"
+					"pathName": "pages/completed/completed",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "show",
+					"pathName": "pages/show/show",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "rentout",
+					"pathName": "pages/rentout/rentout",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "profile",
+					"pathName": "pages/profile/profile"
 				}
 			]
 		}

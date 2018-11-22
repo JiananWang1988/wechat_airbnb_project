@@ -1,5 +1,6 @@
 <!--pages/rentout/rentout.wxml-->
-<view class="profile-tittle">My list</view>
+<view class="h2-header">My Products to Rent</view>
+<view class="h3-comment">Check you Chargers..</view>
   <view class="flexbox" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
     <image class="profile-img" src="/images/chargers/ipad.png"></image>
     <view class="rentout-layout">
@@ -9,6 +10,6 @@
       </view>
       <view class="rentout-description">{{item.description}}</view>
     </view>
-    <image class="btn-minus" src="/images/minus.png"></image>
+    <image class="btn-minus" src="/images/minus3.png"></image>
   </view>
-  <image class="btn-plus" bindtap="testFunction" src="/images/plus.png"></image>
+  <image class="btn-plus" bindtap="testFunction" src="/images/plus2.png"></image>

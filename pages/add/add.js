@@ -1,7 +1,7 @@
 // pages/add/add.js
+var app = getApp()
 // const app = getApp()
 const AV = require('../../utils/av-weapp-min.js');
-
 Page({
   /**
    * Page initial data
@@ -97,10 +97,10 @@ Page({
       item: e.detail.value
     }
     console.log(chargerData);
-    
+
       var page = this;
       wx.request({
-        url: `http://10.183.253.119:3000/api/v1/items?access_token=X1tiimdoewBLjyCUZPM3ezti`, //仅为示例，并非真实的接口地址,
+        url: `${app.globalData.serverUrl}/api/v1/items?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
         method: 'POST',
         data: chargerData,
         header: {
