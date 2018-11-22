@@ -4,5 +4,5 @@
 <view class="success"><text>SUCCESS</text></view>
 <view class="success-text"><text>Go pick up your charger !</text></view>
 </view>
-<button class="btn-confirm" bindtap='indexChargers'>Confirm</button >
+<button bindtap='goBack' class="btn-confirm" >Confirm</button >
 
