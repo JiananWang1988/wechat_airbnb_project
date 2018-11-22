@@ -28,6 +28,12 @@
         "text": ""
       },
       {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "images/grey/myrenting.png",
+        "selectedIconPath": "images/yellow/myrenting.png",
+        "text": ""
+      },
+      {
         "pagePath": "pages/rentout/rentout",
         "iconPath": "images/grey/rentout.png",
         "selectedIconPath": "images/yellow/rentout.png",

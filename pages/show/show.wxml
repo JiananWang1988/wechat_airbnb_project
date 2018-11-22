@@ -5,12 +5,12 @@
 
 <view class="show-text">
 <view class= "name-card">
-<text class="show-name">{{card.name}}</text>
+<text class="show-name">{{item.name}}</text>
 </view>
 <view>
-<text class="show-price">${{card.price}}</text>
+<text class="show-price">${{item.price}}</text>
 </view>
 <view class = "description-card">
-<text class="show-description">{{card.description}}</text>
+<text class="show-description">{{item.description}}</text>
 </view>
 </view>

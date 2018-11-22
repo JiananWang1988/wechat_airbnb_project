@@ -5,10 +5,12 @@
   <input placeholder='Search for the best charger...' search="text" />
 </view>
 
-<view wx:for="{{restaurants}}" wx:for-item="restaurant" wx:key="restaurant.id" bindtap="showRestaurant" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{restaurant.image}}');" data-restaurant="{{restaurant}}">
+<view class = "title">Buy one of these chargers!</view>
+
+<view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1517320069935-381614f8c1e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c62f2e8a66c26a68cd0e82dad5f3716b&auto=format&fit=crop&w=1947&q=80');" data-item="{{item}}">
 
   <view class="card-category">
-    {{restaurant.price}}
+    ${{item.price}}
   </view>
 
   <view class="top-avatar">
@@ -18,11 +20,11 @@
 
   <view class="card-description">
     <view class="name">
-      {{restaurant.name}}
+      {{item.name}}
     </view>
 
     <view class="tag">
-      {{restaurant.description}}
+      {{item.description}}
     </view>
 
   </view>

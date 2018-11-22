@@ -12,8 +12,14 @@ Page({
   },
 
   data: {
-
+    
   },
+
+  onShow: function() {
+    this.getData();
+    // Update local data
+  },
+
   onLoad: function (options) {
     // Save reference to page
     let page = this;
@@ -25,17 +31,31 @@ Page({
       duration: 3000
     });
 
-    // Update local data
-    this.setData(app.globalData)
   },
   //References getApp() to load on the global data onto this page.
 
-  showRestaurant(e) {
+  showItem(e) {
     const data = e.currentTarget.dataset;
-    const restaurant = data.restaurant;
+    const item = data.item;
 
     wx.navigateTo({
-      url: `../show/show?id=${restaurant.id}`
+      url: `../show/show?id=${item.id}`
     });
   },
+  getData(){
+    var page = this;
+    wx.request({
+      url: `http://10.183.253.119:3000/api/v1/items?access_token=X1tiimdoewBLjyCUZPM3ezti`, //仅为示例，并非真实的接口地址,
+      method: 'GET',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        page.setData({
+          items: res.data.items
+        })
+      }
+    })
+  }
 })

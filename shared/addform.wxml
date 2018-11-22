@@ -16,7 +16,7 @@
     <view class ="input-name">Price</view>
   <view class="user-input">
       <view class="text-area-wrap">
-      <textarea value="{{address}}" style="input-size"placeholder="i.e. 250" class="input-height" name="address" maxlength="-1" auto-height />
+      <textarea value="{{price}}" style="input-size"placeholder="i.e. 250" class="input-height" name="price" maxlength="-1" auto-height />
       </view>
     </view>
  
