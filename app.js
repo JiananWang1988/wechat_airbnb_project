@@ -2,28 +2,28 @@
 App({
 
   onLaunch: function () {
-    //Write API call that fetches data from backend
-    //Write function that sets JSON from backend to Global data
-    // const host = 'http://localhost:3000/'
-    // console.log('processing to login')
-    // wx.login({
-    //   success: (res) => {
-    //     console.log(res)
-    //     // insert next code here
-    //     wx.request({
-    //       url: host + 'login',
-    //       method: 'post',
-    //       data: {
-    //         code: res.code
-    //       },
-    //       // insert next code here
-    //       success: (res) => {
-    //         console.log(res)
-    //         this.globalData.userId = res.data.userId
-    //       }
-    //     })
-    //   }
-    // })
+    // Write API call that fetches data from backend
+    // Write function that sets JSON from backend to Global data
+    const host = 'http://localhost:3000/'
+    console.log('processing to login')
+    wx.login({
+      success: (res) => {
+        console.log(res)
+        // insert next code here
+        wx.request({
+          url: host + 'login',
+          method: 'post',
+          data: {
+            code: res.code
+          },
+          // insert next code here
+          success: (res) => {
+            console.log(res)
+            this.globalData.userId = res.data.userId
+          }
+        })
+      }
+    })
   },
 
   globalData: {
