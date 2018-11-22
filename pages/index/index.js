@@ -28,7 +28,7 @@ Page({
     wx.showToast({
       title: 'Updating',
       icon: 'success',
-      duration: 3000
+      duration: 2000
     });
 
   },
