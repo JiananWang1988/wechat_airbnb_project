@@ -5,14 +5,37 @@ Page({
    * Page initial data
    */
   data: {
-
+    item: {
+      name: "",
+      price: "",
+      description: "",
+      image: ""
+    }
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log(options.id)
+    let pages = getCurrentPages()
+    let prevPage = pages[pages.length-2]
+    console.log(prevPage)
+    let item = prevPage.data.items[options.id]
+    console.log(item)
+    this.data.item.name = item.name
+    this.data.item.price = item.price
+    this.data.item.description = item.description
+    this.data.item.image = item.image
+    console.log(this.data)
+    this.setData(this.data)
+  },
 
+  bindEdit: function () {
+    console.log("bindEdit")
+    wx.navigateTo({
+      url: '../completed/completed'
+    })
   },
 
   /**

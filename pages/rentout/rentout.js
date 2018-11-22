@@ -40,6 +40,22 @@ Page({
     }
   })
   },
+
+  editItem: function(e) {
+    const data = e.currentTarget.dataset;
+    const itemid = data.itemid;
+    const page = this
+    console.log(data)
+
+    wx.navigateTo({
+      url: '../edit/edit?id='+e.currentTarget.id,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+
+  },
+
   /**
    * Page initial data
    */

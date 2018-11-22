@@ -2,7 +2,7 @@
 <view class="container">
 <image class="confirm-green" src="/images/confirm-green.png"></image>
 <view class="success"><text>SUCCESS</text></view>
-<view class="success-text"><text>Go pick up your charger !</text></view>
+<view class="success-text"><text>Charge it up bro!</text></view>
 </view>
 <button bindtap='goBack' class="btn-confirm" >Confirm</button >
 

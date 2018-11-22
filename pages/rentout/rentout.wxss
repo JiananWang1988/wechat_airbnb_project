@@ -53,8 +53,16 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 26px;
-  padding-top: 36px;
+  right: 30px;
+  padding-top: 60px;
+}
+
+.pencil{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 30px;
+  padding-top: 20px;
 }
 
 .btn-plus {

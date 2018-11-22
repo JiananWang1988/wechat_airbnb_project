@@ -25,7 +25,7 @@
 .flexbox{
   display: flex;
   border-radius: 4px;
-  margin: 25px 20px;
+  margin: 20px 20px;
   width: 90%;
   background-color: #eaeaea;
 }
@@ -37,13 +37,16 @@
 
 .show-name {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .show-price {
   position: absolute;
-  right: 30px;
+  right: 35px;
   font-size: 23px;
+  font-style: italic;
+  margin-top: 8px;
 }
 
 .rentout-description {
