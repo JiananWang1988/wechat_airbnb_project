@@ -6,32 +6,45 @@ Page({
     wx.navigateTo({
       url: '../add/add'
     })
+  }, 
+  deleteItem: function (e) {
+    const data = e.currentTarget.dataset;
+    const itemid = data.itemid;
+    const page = this
+    console.log(data)
+
+  wx.showModal({
+    title: 'Note',
+    content: 'YOU WANT TO KILL A CHARGER?',
+    success: function (res) {
+      if (res.confirm) {
+    // var page = 
+    wx.request({
+      url: `${app.globalData.serverUrl}/api/v1/items/${itemid}?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
+      method: 'DELETE',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        page.getData()
+        // page.setData({
+        //   items: res.data.items
+        // })
+
+      }
+    })
+      } else if (res.cancel) {
+        console.log('User clicks cancel')
+      }
+    }
+  })
   },
   /**
    * Page initial data
    */
 
   data: {
-    // cards: [
-    //   {
-    //     name: "iPAD CHARGER",
-    //     image: "https://kitt.lewagon.com/placeholder/cities/shanghai",
-    //     price: "45",
-    //     description: "A great charger"
-    //   },
-    //   {
-    //     name: "Your saver",
-    //     image: "https://kitt.lewagon.com/placeholder/cities/tokyo",
-    //     price: "1000",
-    //     description: "Save alot"
-    //   },
-    //   {
-    //     name: "HK Charger",
-    //     image: "https://kitt.lewagon.com/placeholder/cities/kyoto",
-    //     price: "5",
-    //     description: "Charge it now!"
-    //   }
-    // ]
   },
 
   /**
