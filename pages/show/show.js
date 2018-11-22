@@ -68,18 +68,35 @@ Page({
 
   },
   getData: function (item_id) {
-    //wx.requrdy
-    this.setData(
-      {
-        card: 
-          {
-            item_id: 1,
-            name: "Phone Charger",
-            price: "250RMB",
-            description:"Probably one of the coolest chargers you will ever find this charger comes with everything. It is the total package."
-          }
-        }
+    // //wx.requrdy
+    // this.setData(
+    //   {
+    //     card: 
+    //       {
+    //         item_id: 1,
+    //         name: "Phone Charger",
+    //         price: "250RMB",
+    //         description:"Probably one of the coolest chargers you will ever find this charger comes with everything. It is the total package."
+    //       }
+    //     }
+    
 
-      )
+      // )
+    
+  var page = this;
+  wx.request({
+    url: `http://10.183.253.119:3000/api/v1/items/${item_id}?access_token=X1tiimdoewBLjyCUZPM3ezti`, //仅为示例，并非真实的接口地址,
+    method: 'GET',
+    header: {
+      'content-type': 'application/json' // 默认值
+    },
+    success(res) {
+      console.log(res.data)
+      page.setData({
+        item: res.data
+      })
+    }
+  })
+    
   }
 })

@@ -1,13 +1,13 @@
 <!--pages/rentout/rentout.wxml-->
 <view class="profile-tittle">My list</view>
-  <view class="flexbox" wx:for="{{cards}}" wx:for-index="index" wx:for-item="card">
-    <image class="profile-img" src="{{card.image}}"></image>
+  <view class="flexbox" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+    <image class="profile-img" src="/images/chargers/ipad.png"></image>
     <view class="rentout-layout">
       <view class="profile-text">
-        <view class="show-name">{{card.name}}</view>
-        <view class="show-price">${{card.price}}</view>
+        <view class="show-name">{{item.name}}</view>
+        <view class="show-price">${{item.price}}</view>
       </view>
-      <view class="rentout-description">${{card.description}}</view>
+      <view class="rentout-description">{{item.description}}</view>
     </view>
     <image class="btn-minus" src="/images/minus.png"></image>
   </view>

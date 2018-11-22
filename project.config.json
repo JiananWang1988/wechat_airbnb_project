@@ -8,12 +8,13 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
 	"appid": "wx661a20eedb95c390",
-	"projectname": "wechat_airbnb_project",
+	"projectname": "WeChat",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -36,66 +37,30 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
-			"current": 4,
+			"current": 3,
 			"list": [
 				{
-					"id": 0,
-					"name": "add",
+					"id": -1,
+					"name": "edit",
 					"pathName": "pages/edit/edit",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "index",
-					"pathName": "pages/index/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "index",
-					"pathName": "pages/index/index",
-					"name": "showdetail",
-					"pathName": "pages/show/show",
-				},
-				{
-					"id": -1,
-					"name": "showdetail",
-					"pathName": "pages/show/show",
-					"name": "complete",
-					"pathName": "pages/completed/completed",
-					"query": ""
-				},
-				{
-					"id": 4,
-					"name": "my renting",
-					"pathName": "pages/profile/profile",
-				},
-				{
-					"id": -1,
-					"name": "complete",
-					"pathName": "pages/completed/completed",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "complete",
-					"pathName": "pages/profile/profile",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "rentout",
-					"pathName": "pages/rentout/rentout",
-					"query": ""
-				},
-				{
-					"id": -1,
 					"name": "add",
-					"pathName": "pages/add/add"
-					"name": "rentout",
-					"pathName": "pages/rentout/rentout",
+					"pathName": "pages/add/add",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "completed",
+					"pathName": "pages/completed/completed"
 				}
 			]
 		}

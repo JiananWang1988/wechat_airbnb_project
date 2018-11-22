@@ -12,6 +12,11 @@
   margin-bottom: 1px;
 }
 
+.title {
+  margin-top: 15px;
+  text-align: center;
+}
+
 .card {
   height: 120px;
   width: 80vw;
