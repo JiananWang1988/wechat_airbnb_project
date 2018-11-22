@@ -1,22 +1,45 @@
 // pages/add/add.js
+// const app = getApp()
+const AV = require('../../utils/av-weapp-min.js');
+
 Page({
-  jumpCompleted: function () {
-    wx.navigateTo({
-      url: '../completed/completed'
-    })
-  },
   /**
    * Page initial data
    */
   data: {
-
+    filePath: 'hello',
+  },
+  onLoad: function () {
+  },
+  takePhoto: function () {
+    var page = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success: function (res) {
+        let tempFilePath = res.tempFilePaths[0];
+        page.setData({
+          filePath: tempFilePath
+        });
+        new AV.File('file-name', {
+          blob: {
+            uri: tempFilePath,
+          },
+        }).save().then(
+          file => console.log(file.url())
+        ).catch("error is " + console.error);
+      }
+    });
   },
 
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-
+  jumpCompleted: function () {
+    wx.navigateTo({
+      url: '../completed/completed'
+    })
   },
 
   /**
