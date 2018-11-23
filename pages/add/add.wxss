@@ -1,5 +1,6 @@
 /* pages/edit/edit.wxss */
 /* pages/new/new.wxss */
+
 .container {
   background: #edeaea;
   margin-top: 40px;
