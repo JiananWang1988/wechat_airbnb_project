@@ -12,7 +12,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options)
+    let price = options.price
+    let name = options.name
+    let description = options.descriptio
+    this.setData ({
+      price: price,
+      name: name,
+      description: description
+    })
   },
 
   /**

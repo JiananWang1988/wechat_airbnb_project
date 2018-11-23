@@ -1,14 +1,13 @@
 <view class="show-text">
 <view class= "intro">Congrats! You have a STUFFIE charger!</view>
 <view class= "name-card">
-  <image class="success" src="/images/confirm-green.png"></image>
-  <text class="show-name">{{item.name}}</text>
+  <text class="show-name">{{name}}</text>
 </view>
 <view>
-  <text class="show-price">You're charger is rented from ${{item.price}}</text>
+  <text class="show-price">${{price}}</text>
 </view>
 <view class = "description-card">
-  <text class="show-description">{{item.description}}</text>
+  <text class="show-description">{{description}}</text>
 </view>
 <view class="section">
   <!-- <picker mode="date" value="{{dateStart}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeStart"> -->
@@ -16,7 +15,7 @@
       Start date 
     </view>
     <view class="datevalue">
-    {{dateStart}}
+    {{start_date}}
     </view>
   <!-- </picker> -->
 </view>

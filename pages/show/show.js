@@ -1,9 +1,16 @@
 // pages/show/show.js
 var app = getApp()
 Page({
-  clickComplete: function () {
+  clickComplete: function (e) {
+    console.log(e);
+    let id = e.target.dataset.item
+    let price = e.target.dataset.price
+    let name = e.target.dataset.name
+    let description = e.target.dataset.description
+
     wx.navigateTo({
-      url: '../confirm/confirm'
+      url: `../confirm/confirm?id=${id}&price=${price}&name=${name}&description=${description}`
+      // show/show?id=${item.id}`
     })
   },
   /**
