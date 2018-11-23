@@ -1,6 +1,6 @@
 // pages/edit/edit.js
+var app = getApp()
 Page({
-
   /**
    * Page initial data
    */
@@ -23,6 +23,7 @@ Page({
     console.log(prevPage)
     let item = prevPage.data.items[options.id]
     console.log(item)
+    this.data.itemid = item.id
     this.data.item.name = item.name
     this.data.item.price = item.price
     this.data.item.description = item.description
@@ -31,13 +32,39 @@ Page({
     this.setData(this.data)
   },
 
-  bindEdit: function () {
-    console.log("bindEdit")
-    wx.navigateTo({
-      url: '../completed/completed'
+  // bindEdit: function () {
+
+  //   console.log("bindEdit")
+  //   wx.navigateTo({
+  //     url: '../completed/completed'
+  //   })
+  // },
+
+  bindEdit: function (e) {
+    const itemid = this.data.itemid;
+    let chargerData = {
+      item: e.detail.value
+    }
+    // console.log(chargerData);
+
+    var page = this;
+    wx.request({
+      url: `${app.globalData.serverUrl}/api/v1/items/${itemid}?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
+      method: 'PUT',
+      data: chargerData,
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        // wx.navigateBack({
+        // })
+      wx.navigateTo({
+        url: '../completed/completed'
+        })
+      }
     })
   },
-
   /**
    * Lifecycle function--Called when page is initially rendered
    */
