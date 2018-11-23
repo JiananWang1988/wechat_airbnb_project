@@ -2,7 +2,7 @@
 <view class="h2-header">My Products to Rent</view>
 <view class="h3-comment">Check you Chargers..</view>
   <view class="flexbox" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
-    <image class="profile-img" src="/images/chargers/ipad.png"></image>
+    <image class="profile-img" src="{{item.image}}"></image>
     <view class="rentout-layout">
       <view class="profile-text">
         <view class="show-name">{{item.name}}</view>
