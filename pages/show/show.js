@@ -25,12 +25,39 @@ Page({
       dateEnd: e.detail.value
     })
   },
+
+  clickComplete: function() {
+    const itemid = this.data.itemid;
+    var orderData = { order : {
+      start_time: this.data.dateStart,
+      end_time: this.data.dateEnd
+    }}
+    wx.request({
+      url: `${app.globalData.serverUrl}/api/v1/items/${itemid}/orders?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
+      method: 'POST',
+      data: orderData,
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        wx.navigateTo({
+          url: '../confirm/confirm'
+      })
+        
+        // page.setData({
+        //   items: res.data.items
+        // })
+      }
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
     let itemId = options.id
     this.getData(itemId);
+    this.data.itemid=  options.id;
   },
 
   /**

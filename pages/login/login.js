@@ -75,11 +75,15 @@ Page({
           },
           // insert next code here
           success: (res) => {
-            let access_token = res.data.access_token
-            console.log(access_token)
-            app.globalData.access_token = access_token
+            let user_id = res.data.id;
+            let access_token = res.data.access_token;
+            app.globalData.access_token = access_token;
+            wx.setStorage({
+              key: "user",
+              data: res.data  
+            });
             wx.switchTab({
-              url: '../index/index',
+              url: `../index/index`,
             })
           }
         })

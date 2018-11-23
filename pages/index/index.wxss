@@ -31,7 +31,7 @@
   position: relative;
   margin:7vw;
   border-radius: 3px;
-  box-shadow: 3px 5px #888888;
+  box-shadow: 3px 3px #edeaea;
 }
 
 .card-category {

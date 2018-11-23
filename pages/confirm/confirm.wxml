@@ -1,9 +1,11 @@
 <view class="show-text">
+<view class= "intro">Congrats! You have a STUFFIE charger!</view>
 <view class= "name-card">
+  <image class="success" src="/images/confirm-green.png"></image>
   <text class="show-name">{{item.name}}</text>
 </view>
 <view>
-  <text class="show-price">${{item.price}}</text>
+  <text class="show-price">You're charger is rented from ${{item.price}}</text>
 </view>
 <view class = "description-card">
   <text class="show-description">{{item.description}}</text>
