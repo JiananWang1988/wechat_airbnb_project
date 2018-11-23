@@ -46,7 +46,7 @@ Page({
     const itemid = data.itemid;
     const page = this
     console.log(data)
-
+    //?id=2&
     wx.navigateTo({
       url: '../edit/edit?id='+e.currentTarget.id,
       success: function(res) {},

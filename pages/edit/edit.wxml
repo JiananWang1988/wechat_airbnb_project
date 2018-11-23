@@ -9,6 +9,3 @@
 <template is="form" data="{{item}}"/>
 </view>
 
-<view>
-  <button id="submit-button" bindtap = "bindEdit" style="margin-top:30px" type="warn" form-type="Edit" loading="{{loading}}">Submit</button>
-</view>
