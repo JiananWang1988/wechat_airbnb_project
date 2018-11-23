@@ -1,4 +1,5 @@
 // pages/profile/profile.js
+var app = getApp()
 Page({
 
   /**
@@ -6,21 +7,7 @@ Page({
    */
   data: {
     cards: [
-      {
-        name: "iPAD CHARGER",
-        image: "https://kitt.lewagon.com/placeholder/cities/shanghai",
-        price: "45"
-      },
-      {
-        name: "Your saver",
-        image: "https://kitt.lewagon.com/placeholder/cities/tokyo",
-        price: "1000"
-      },
-      {
-        name: "A lot of charger",
-        image: "https://kitt.lewagon.com/placeholder/cities/kyoto",
-        price: "5"
-      }
+     
     ]
   },
 
@@ -28,7 +15,24 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    var page = this;
+    var user = wx.getStorageSync('user')
+    if (user) {
+      console.log(user)
+    }
+    wx.request({
+      url: `${app.globalData.serverUrl}/api/v1/items?access_token=${app.globalData.access_token}&user=${user.id}`, //仅为示例，并非真实的接口地址,
+      method: 'GET',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        page.setData({
+          cards:res.data.items
+        })
+      }
+    });
   },
 
   /**

@@ -37,23 +37,26 @@
 .show-name {
   font-weight: bold;
   font-size: 15px;
+  color: #525252;
 }
 
 .show-price {
   position: absolute;
   right: 80px;
   font-size: 13px;
+  color: #525252;
 }
 
 .rentout-description {
   font-size: 15px;
+  color: #525252;
 }
 
 .btn-minus {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 30px;
+  right: 28px;
   padding-top: 60px;
 }
 
@@ -61,7 +64,7 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 30px;
+  right: 28px;
   padding-top: 20px;
 }
 
