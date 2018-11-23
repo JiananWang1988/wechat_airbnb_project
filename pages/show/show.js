@@ -1,18 +1,18 @@
 // pages/show/show.js
 var app = getApp()
 Page({
-  clickComplete: function (e) {
-    console.log(e);
-    let id = e.target.dataset.item
-    let price = e.target.dataset.price
-    let name = e.target.dataset.name
-    let description = e.target.dataset.description
-
-    wx.navigateTo({
-      url: `../confirm/confirm?id=${id}&price=${price}&name=${name}&description=${description}`
-      // show/show?id=${item.id}`
-    })
-  },
+  // clickComplete: function (e) {
+  //   console.log(e);
+  //   let id = e.target.dataset.item
+  //   let price = e.target.dataset.price
+  //   let name = e.target.dataset.name
+  //   let description = e.target.dataset.description
+  
+  //   wx.navigateTo({
+  //     url: `../confirm/confirm?id=${id}&price=${price}&name=${name}&description=${description}`
+  //     // show/show?id=${item.id}`
+  //   })
+  // },
   /**
    * Page initial data
    */
@@ -32,13 +32,29 @@ Page({
       dateEnd: e.detail.value
     })
   },
+  clickComplete: function(){
+    var page = this
+    wx.showModal({
+      title: 'NOTICE',
+      content: 'Are you sure',
+      success(res) {
+        if (res.confirm) {
+          page.itemOrder()
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
 
-  clickComplete: function() {
+  itemOrder: function() {
+    
     const itemid = this.data.itemid;
     var orderData = { order : {
       start_time: this.data.dateStart,
       end_time: this.data.dateEnd
     }}
+    var page = this
     wx.request({
       url: `${app.globalData.serverUrl}/api/v1/items/${itemid}/orders?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
       method: 'POST',
@@ -47,10 +63,17 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
+      
         console.log(res.data)
+        let id = page.data.item.id
+        let price = page.data.item.price
+        let name = page.data.item.name
+        let description = page.data.item.description
+
         wx.navigateTo({
-          url: '../confirm/confirm'
-      })
+          url: `../confirm/confirm?id=${id}&price=${price}&name=${name}&description=${description}`
+          // show/show?id=${item.id}`
+        })
         
         // page.setData({
         //   items: res.data.items
@@ -116,7 +139,7 @@ Page({
 
   },
   getData: function (item_id) {
-    // //wx.requrdy
+    // //wx.requrdyfget
     // this.setData(
     //   {
     //     card: 

@@ -30,7 +30,7 @@ Page({
       icon: 'success',
       duration: 2000
     });
-    getD
+    
   },
   //References getApp() to load on the global data onto this page.
 

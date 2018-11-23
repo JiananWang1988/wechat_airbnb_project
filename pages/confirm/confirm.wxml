@@ -1,32 +1,14 @@
 <view class="show-text">
-<view class= "intro">Congrats! You have a STUFFIE charger!</view>
-<view class= "name-card">
+<view class= "intro">Congrats!</view>
+<view class= "img-layout"><image class="confirm-img" src="/images/confirm-green.png"></image></view>
+<view class="intro-message">You have rented {{name}} from stuffie for {{price}} RMB!</view>
+<!-- <view class= "name-card">
   <text class="show-name">{{name}}</text>
 </view>
 <view>
   <text class="show-price">${{price}}</text>
-</view>
-<view class = "description-card">
+</view> -->
+<!-- <view class = "description-card">
   <text class="show-description">{{description}}</text>
-</view>
-<view class="section">
-  <!-- <picker mode="date" value="{{dateStart}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeStart"> -->
-    <view class="picker">
-      Start date 
-    </view>
-    <view class="datevalue">
-    {{start_date}}
-    </view>
-  <!-- </picker> -->
-</view>
-<view class="section">
-  <!-- <picker mode="date" value="{{dateEnd}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeEnd"> -->
-    <view class="picker">
-      End date
-    </view>
-    <view class="datevalue">
-    {{dateEnd}}
-    </view>
-  <!-- </picker> -->
-</view>
+</view> -->
 </view>

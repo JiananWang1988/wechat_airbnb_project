@@ -15,7 +15,7 @@ Page({
     console.log(options)
     let price = options.price
     let name = options.name
-    let description = options.descriptio
+    let description = options.description
     this.setData ({
       price: price,
       name: name,
