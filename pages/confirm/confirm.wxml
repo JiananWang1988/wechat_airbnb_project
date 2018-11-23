@@ -1,4 +1,5 @@
 <view class="show-text">
+<view class= "intro">Congrats! You have a STUFFIE charger!</view>
 <view class= "name-card">
   <text class="show-name">{{name}}</text>
 </view>

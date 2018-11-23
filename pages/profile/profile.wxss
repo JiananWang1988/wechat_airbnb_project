@@ -37,8 +37,9 @@
 
 .show-name {
   font-weight: bold;
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 22px;
+  margin-top: 7px;
+  color: #525252;
 }
 
 .show-price {
@@ -47,8 +48,13 @@
   font-size: 23px;
   font-style: italic;
   margin-top: 8px;
+  color: #525252;
 }
 
 .rentout-description {
+  position: absolute;
   font-size: 15px;
+  left: 171px;
+  margin-top: 50px;
+  color: #525252;
 }

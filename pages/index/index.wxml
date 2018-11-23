@@ -31,9 +31,9 @@
 
     </view>
 
-      <view class="bottom-avatar">
+      <!-- <view class="bottom-avatar">
       <image bindtap='linkComplete' class="bottom-avatars" src="/images/buy_button.png"></image>
-    </view>
+    </view> -->
   </view>
 </view>
 
