@@ -1,6 +1,6 @@
 <!--pages/show/show.wxml-->
 <view class="show-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.image}}');">
- <image class="buy-button" bindtap='clickComplete' src="/images/buy_button.png"></image>
+ <image class="buy-button" data-price='{{item.price}}' data-item='{{item.id}}' data-name='{{item.name}}' data-description='{{item.description}}' bindtap='clickComplete' src="/images/buy_button.png"></image>
 </view>
 
 <view class="show-text">
@@ -14,7 +14,7 @@
   <text class="show-description">{{item.description}}</text>
 </view>
 <view class="section">
-  <picker mode="date" value="{{dateStart}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeStart">
+  <picker mode="date" value="dateStart" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeStart">
     <view class="picker">
       Start date 
     </view>
@@ -24,7 +24,7 @@
   </picker>
 </view>
 <view class="section">
-  <picker mode="date" value="{{dateEnd}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeEnd">
+  <picker mode="date" value="dateEnd" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeEnd">
     <view class="picker">
       End date
     </view>
