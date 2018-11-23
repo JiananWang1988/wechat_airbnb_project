@@ -41,3 +41,6 @@
   width: 90wv;
 }
 
+.picker {
+  font-weight: bold
+}

@@ -3,15 +3,28 @@ var app = getApp()
 Page({
   clickComplete: function () {
     wx.navigateTo({
-      url: '../completed/completed'
+      url: '../confirm/confirm'
     })
   },
   /**
    * Page initial data
    */
   data: {
+    dateStart: 'YYYY-MM-DD',
+    dateEnd: 'YYYY-MM-DD',
   },
-
+  bindDateChangeStart: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      dateStart: e.detail.value
+    })
+  },
+  bindDateChangeEnd: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      dateEnd: e.detail.value
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
