@@ -1,8 +1,3 @@
-<!--pages/show/show.wxml-->
-<view class="show-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.image}}');">
- <image class="buy-button" bindtap='clickComplete' src="/images/buy_button.png"></image>
-</view>
-
 <view class="show-text">
 <view class= "name-card">
   <text class="show-name">{{item.name}}</text>
@@ -14,23 +9,23 @@
   <text class="show-description">{{item.description}}</text>
 </view>
 <view class="section">
-  <picker mode="date" value="{{dateStart}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeStart">
+  <!-- <picker mode="date" value="{{dateStart}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeStart"> -->
     <view class="picker">
       Start date 
     </view>
     <view class="datevalue">
     {{dateStart}}
     </view>
-  </picker>
+  <!-- </picker> -->
 </view>
 <view class="section">
-  <picker mode="date" value="{{dateEnd}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeEnd">
+  <!-- <picker mode="date" value="{{dateEnd}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChangeEnd"> -->
     <view class="picker">
       End date
     </view>
     <view class="datevalue">
     {{dateEnd}}
     </view>
-  </picker>
+  <!-- </picker> -->
 </view>
 </view>

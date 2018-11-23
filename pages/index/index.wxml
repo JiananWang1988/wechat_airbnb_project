@@ -9,7 +9,7 @@
 
 
 <view class = "cards-menu">
-  <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1517320069935-381614f8c1e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c62f2e8a66c26a68cd0e82dad5f3716b&auto=format&fit=crop&w=1947&q=80');" data-item="{{item}}">
+  <view wx:for="{{items}}" wx:for-item="item" wx:key="item.id" bindtap="showItem" class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{item.image}}');" data-item="{{item}}">
 
     <view class="card-category">
       ${{item.price}}

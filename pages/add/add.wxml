@@ -47,7 +47,6 @@
         <block wx:if="{{image != ''}}">
         <image class ="add-image" src="{{filePath}}" bindtap='takePhoto'></image>
         </block>
-    <textarea value="{{image}}" style="input-size" class="input-height" name="image" maxlength="-1" auto-height />
     </view>
   </view>
 

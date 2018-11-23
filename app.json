@@ -8,7 +8,8 @@
     "pages/edit/edit",
     "pages/completed/completed",
     "pages/profile/profile",
-    "pages/add/add"
+    "pages/add/add",
+    "pages/confirm/confirm"
   ],
   "window": {
     "backgroundTextStyle": "light",

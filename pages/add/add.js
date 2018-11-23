@@ -7,7 +7,7 @@ Page({
    * Page initial data
    */
   data: {
-    filePath: 'hello',
+    filePath: '',
   },
   onLoad: function () {
   },
@@ -26,9 +26,12 @@ Page({
           blob: {
             uri: tempFilePath,
           },
-        }).save().then(
-          file => console.log(file.url())
-        ).catch("error is " + console.error);
+        }).save().then(function(file){
+          console.log(file.url())
+          page.setData({
+            remoteUrl: file.url()
+          })
+        }).catch("error is " + console.error);
       }
     });
   },
@@ -96,6 +99,7 @@ Page({
     let chargerData = {
       item: e.detail.value
     }
+    chargerData.item.image = this.data.remoteUrl
     console.log(chargerData);
 
       var page = this;
