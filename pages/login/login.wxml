@@ -1,5 +1,5 @@
 <!--pages/login/login.wxml-->
- <view class="background" style="background: url('../../images/bground.jpg');">
+ <view class="background" style="background: url('http://lc-sQC9XUIG.cn-n1.lcfile.com/a49cced946f22c82a27c.jpg');">
   <view class="welcome">Welcome to STUFFIE!</view>
  
 
@@ -7,6 +7,6 @@
     <button id="login" bindtap='login' style="margin-top:30px" type="warn" loading="{{loading}}">LOGIN</button>
   </view>
 
-    <view class="slogan">"A Charger is like a lover..Everyone needs one- Voltaire"</view>
+    <view class="slogan">"A Charger is like a lover..Everyone needs one"- Voltaire</view>
 
 </view>

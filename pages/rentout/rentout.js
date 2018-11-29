@@ -67,6 +67,14 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+
+    
+    const user = wx.getStorageSync('user')
+    const id = user.id
+    console.log(22, id)
+    let page = this;
+
+
   },
 
   /**
@@ -118,7 +126,7 @@ Page({
 
   },
   getData(){
-    var page = this;
+    var page = this
     wx.request({
       url: `${app.globalData.serverUrl}/api/v1/users/1/rentingout?access_token=${app.globalData.access_token}`, //仅为示例，并非真实的接口地址,
       method: 'GET',
@@ -130,7 +138,7 @@ Page({
         page.setData({
           items: res.data.items
         })
-        
+
       }
     })
   }

@@ -12,7 +12,7 @@ App({
 
   globalData: {
     access_token: '',
-    serverUrl: "http://localhost:3000"
+    serverUrl: "https://stuffie.herokuapp.com"
   }
 
 })
